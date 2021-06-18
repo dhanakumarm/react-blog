@@ -1,4 +1,4 @@
-import { HomeView } from "./HomeView";
+
 
 export const HomeContainer = () => {
   return (
@@ -11,7 +11,7 @@ export const HomeContainer = () => {
           <h5>Example Sections and Dividers</h5>
             <div id="row">
               <div class="section">
-                <h5>Welcome!</h5>
+                 <h5><a href="/post">Welcome</a> </h5>
                 <div class="divider"></div>
                 <div class="content">
                   <span class="blue-text text-lighten-2">
@@ -47,7 +47,7 @@ export const HomeContainer = () => {
 
             <div id="row">
               <div class="section">
-                <h5>Welcome!</h5>
+                <h5><a href="/post">Welcome</a> </h5>
                 <div class="divider"></div>
                 <div class="content">
                   <span class="blue-text text-lighten-2">
@@ -82,7 +82,7 @@ export const HomeContainer = () => {
 
             <div id="row">
               <div class="section">
-                <h5>Welcome!</h5>
+                 <h5><a href="/post">Welcome</a> </h5>
                 <div class="divider"></div>
                 <div class="content">
                   <span class="blue-text text-lighten-2">
@@ -129,9 +129,9 @@ export const HomeContainer = () => {
               </div>
               <div class="portlet-content">
                   <ul class="portlet-list">
-                  <li><a href="#valign">Create New Post</a></li>
-                  <li><a href="#hiding" class="">Manage Posts</a></li>
-                  <li><a href="#formatting" class="">Approve Comments (0)</a></li>
+                  <li><a href="/createpost">Create New Post</a></li>
+                  <li><a href="/managepost" class="">Manage Posts</a></li>
+                  <li><a href="/managecomment" class="">Approve Comments (0)</a></li>
                   <li><a href="#browser-default">Logout</a></li>
                 </ul>
               </div>
