@@ -19,7 +19,7 @@ const MainLayout = (props) => {
         <div class="section">
           <div class="row">
             <div class="col s12 center">
-              <h4>Contact Us</h4>
+              
               <div>{props.children}</div>
             </div>
           </div>

@@ -17,6 +17,11 @@ const DashboardNavbar = () => {
         <li className={splitLocation[1] === "" ? "active" : ""}>
           <Link to="/">Home</Link>
         </li>
+
+        <li className={splitLocation[1] === "post" ? "active" : ""}>
+          <Link to="/post">Post</Link>
+        </li>
+
         <li className={splitLocation[1] === "about" ? "active" : ""}>
           <Link to="/about">About</Link>
         </li>
