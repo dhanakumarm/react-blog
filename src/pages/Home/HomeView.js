@@ -1,9 +1,15 @@
 import React from "react";
+import PostDetail from "../Post/components/PostDetail";
 
 export const HomeView = () => {
   return (
-    <div>
-      <p>This is from Home Page</p>
-    </div>
+    
+        <div id="grid-layouts" className="section scrollspy">
+          <h5>Example Sections and Dividers</h5>
+          <PostDetail />
+          <PostDetail />
+          <PostDetail />
+        </div>
+     
   );
 };

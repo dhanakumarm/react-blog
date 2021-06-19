@@ -16,18 +16,14 @@ const DashboardNavbar = () => {
       <ul className="right hide-on-med-and-down">
         <li className={splitLocation[1] === "" ? "active" : ""}>
           <Link to="/">Home</Link>
-        </li>
-
-        {/* <li className={splitLocation[1] === "post" ? "active" : ""}>
-          <Link to="/post">Post</Link>
-        </li> */}
+        </li>        
 
         <li className={splitLocation[1] === "about" ? "active" : ""}>
           <Link to="/about">About</Link>
         </li>
 
-        <li className={splitLocation[1] === "users" ? "active" : ""}>
-          <a href="/users">Contact</a>
+        <li className={splitLocation[1] === "contact" ? "active" : ""}>
+          <a href="/contact">Contact</a>
         </li>
         <li className={splitLocation[1] === "login" ? "active" : ""}>
           <a href="/login">Login</a>
@@ -42,10 +38,10 @@ const DashboardNavbar = () => {
           <a href="/about">About</a>
         </li>
         <li>
-          <a href="/about">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="/">Login</a>
+          <a href="/login">Login</a>
         </li>
       </ul>
     </div>

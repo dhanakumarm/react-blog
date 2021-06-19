@@ -4,17 +4,16 @@ import AppRoute from "../components/AppRoute";
 import DashboardLayout from "../pages/Layout/DashboardLayout";
 import MainLayout from "../pages/Layout/MainLayout";
 
+import NotFound from "../navigation/NotFound";
+import HomeContainer from "../pages/Home/HomeContainer";
+import AboutContainer from "../pages/About/AboutContainer";
+import ContactContainer from "../pages/Contact/ContactContainer";
+import LoginContainer from "../pages/Login/LoginContainer";
 
-import { HomeContainer } from "../pages/Home/HomeContainer";
-import About from "../pages/about.js";
-import Users from "../pages/users.js";
-import Login from "../pages/login.js";
-import Post from "../pages/post";
-import CreatePost from "../pages/createPost";
-import Contact from "../pages/contact";
-import NotFound from "./NotFound";
-import ManagePost from "../pages/managepost";
-import ManageComment from "../pages/managecomment";
+import CommentContainer from "../pages/Comments/CommentContainer";
+import PostCreate from "../pages/Post/PostCreate";
+import PostList from "../pages/Post/PostList";
+import PostView from "../pages/Post/PostView";
 
 export const RouterConfig = () => {
   return (
@@ -26,22 +25,54 @@ export const RouterConfig = () => {
           component={HomeContainer}
           layout={DashboardLayout}
         />
-
-        <AppRoute exact path="/about" component={About} layout={DashboardLayout} />
-
-        <AppRoute exact path="/post" component={Post} layout={DashboardLayout} />
-        <AppRoute exact path="/managepost" component={ManagePost} layout={DashboardLayout} />
-        <AppRoute exact path="/managecomment" component={ManageComment} layout={DashboardLayout} />
-        <AppRoute exact path="/createpost" component={CreatePost} layout={DashboardLayout} />
-
         <AppRoute
           exact
-          path="/users"
-          component={Contact}
+          path="/about"
+          component={AboutContainer}
           layout={DashboardLayout}
         />
 
-        <AppRoute exact path="/login" component={Login} layout={MainLayout} />
+        <AppRoute
+          exact
+          path="/contact"
+          component={ContactContainer}
+          layout={DashboardLayout}
+        />
+
+        <AppRoute
+          exact
+          path="/login"
+          component={LoginContainer}
+          layout={MainLayout}
+        />
+
+        <AppRoute
+          exact
+          path="/createpost"
+          component={PostCreate}
+          layout={DashboardLayout}
+        />
+
+        <AppRoute
+          exact
+          path="/managepost"
+          component={PostList}
+          layout={DashboardLayout}
+        />
+
+        <AppRoute
+          exact
+          path="/managecomment"
+          component={CommentContainer}
+          layout={DashboardLayout}
+        />
+
+        <AppRoute
+          exact
+          path="/post"
+          component={PostView}
+          layout={DashboardLayout}
+        />
 
         <AppRoute path="*" component={NotFound} layout={MainLayout} />
       </Switch>
