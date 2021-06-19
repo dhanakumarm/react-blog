@@ -1,0 +1,17 @@
+.guide-content ul {
+  padding-left: 3rem;
+  list-style-type: none;
+}
+
+.guide-content ul li:before {
+  color: #44b3a0;
+  content: "⁃";
+  display: inline-block;
+  width: 6pt;
+  margin-left: -12pt;
+  margin-right: 6pt;
+}
+
+.guide-content ul li {
+  margin-bottom: 1rem;
+}

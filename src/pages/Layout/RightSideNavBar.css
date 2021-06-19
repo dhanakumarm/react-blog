@@ -1,0 +1,38 @@
+.portlet {
+  padding: 3px;
+}
+
+.portlet ul {
+  margin: auto !important;
+}
+
+.portlet-list a {
+  padding: 2px;
+}
+
+.portlet-list li {
+  padding: 2px 0px 3px 5px;
+}
+
+.portlet-heading {
+  padding: 3px 8px;
+  background: #e5e5e5 !important;
+  color: black;
+}
+.portlet-title {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+.portlet-content {
+  margin: 0;
+  padding: 1px 4px;
+  margin-bottom: 10px;
+  /* background: #effdff; */
+}
+
+.portlet-content .tag {
+  padding: 2px 4px;
+}

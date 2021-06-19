@@ -1,0 +1,33 @@
+.comment {
+    padding: 10px;
+    margin: 5px 0px;
+    background: #f5f5f5;
+  }
+  
+  .commentlink {
+    float: right;
+    margin: auto;
+    font-weight: bold;
+    padding: 0 5px 5px 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .comment-heading{
+    margin: 5px 0;
+      padding: 0 0 3px;
+  }
+  .comment-title{
+    display: inline;
+  }
+  
+  .comment .time {
+    color: #888;
+    font-size: 0.8em;
+  }
+  
+  .comment .content {
+    margin: 10px 0;
+  }
+  
+  
