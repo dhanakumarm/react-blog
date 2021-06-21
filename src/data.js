@@ -3,7 +3,7 @@ export const POST_INDEX = [
     id: "4",
     title: "ttest",
     content:
-      "# This is an H1\r\n\r\n## This is an H2\r\n\r\n###### This is an H6",
+      "##### This is an H1\r\n\r\n#### This is an H2\r\n\r\n###### This is an H6",
     tags: "yii",
     status: "2",
     create_time: "1624000234",
@@ -14,7 +14,7 @@ export const POST_INDEX = [
   {
     id: "3",
     title: "This is Testing YII POST",
-    content: "<h1>Test</h1>",
+    content: "Test\r\n\r\ntes\r\n\r\nskldfjsd\r\ns\r\n\r\nsadfsadfa",
     tags: "yii, blog",
     status: "2",
     create_time: "1623757385",
